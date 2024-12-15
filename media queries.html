@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Example</title>
+    <style>
+        /* Default styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            background-color: #ffffff;
+            border: 2px solid #4caf50;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        /* Media query for tablets (width between 600px and 1024px) */
+        @media (min-width: 600px) and (max-width: 1024px) {
+            .container {
+                background-color: #e3fcef;
+                border-color: #2e7d32;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Media query for large screens (width above 1024px) */
+        @media (min-width: 1025px) {
+            .container {
+                background-color: #d1f3f9;
+                border-color: #0288d1;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Responsive Design with Media Queries</h1>
+        <p>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+            Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+            
+            Media queries can be used to check many things, such as:
+            
+            width and height of the viewport
+            orientation of the viewport (landscape or portrait)
+            resolution
+            Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fluid Layout</title>
+    <style>
+        /* Reset and global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #4caf50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px; /* Negative margin to offset padding */
+        }
+
+        .col {
+            padding: 10px;
+            flex: 1 1 100%; /* Default to full width */
+        }
+
+        /* Box styling for visualization */
+        .box {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Responsive Breakpoints */
+        @media (min-width: 600px) {
+            .col {
+                flex: 1 1 48%; /* Two columns */
+            }
+        }
+
+        @media (min-width: 900px) {
+            .col {
+                flex: 1 1 30%; /* Three columns */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Responsive Fluid Layout</h1>
+            
+        </header>
+        <div class="row">
+            <div class="col">
+                <div class="box">Column 1</div>
+                
+            </div>
+            <div class="col">
+                <div class="box">Column 2</div>
+            </div>
+            <div class="col">
+                <div class="box">Column 3</div>
+            </div>
+            <div class="col">
+                <div class="box">Column 4</div>
+            </div>
+            <div class="col">
+                <div class="box">Column 5</div>
+            </div>
+            <div class="col">
+                <div class="box">Column 6</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
