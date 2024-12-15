@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An accessible website using ARIA roles and attributes.">
+  <title>Accessible Website with ARIA</title>
+  <link rel="stylesheet" href="pract8.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+
+  <header role="banner" class="header">
+    <h1 id="site-title">STUDY COMPUTING(DATA ANALYSIS)</h1>
+    <nav aria-labelledby="main-navigation-label">
+      <h2 id="main-navigation-label" class="sr-only">Main Navigation</h2>
+      <ul class="nav" role="menu">
+        <li role="menuitem"><a href="#about">About</a></li>
+        <li role="menuitem"><a href="#services">Services</a></li>
+        <li role="menuitem"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="about">
+      
+  <main id="main-content" role="main">
+    <section id="about" aria-labelledby="about-heading" tabindex="-1">
+      <h2 id="about-heading">About Us</h2>
+      <center>
+      <pre style="font-family: Arial, Helvetica, sans-serif;">Master the specialisation of computing and data analytics with a focus on cutting
+         edge cutting technologies to deliver data-driven insights and intelligence. Develop a broad knowledge to get ahead of the next generation of computing professionals.
+        Whether taking on your master's or graduate certificate both courses are designed for graduates with a computing background who
+         wish to upskill, and also for graduates without a computing background who are inspired to enter the booming field of computing technology.
+      </pre>
+    </center>
+    </section>
+
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Our Services</h2>
+      <ul role="list">
+        <li role="listitem">Web Design</li>
+        <li role="listitem">Accessibility Audits</li>
+        <li role="listitem">SEO Optimization</li>
+      </ul>
+    </section>
+
+</div>
+
+<div class="contact">
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Us</h2>
+      <form aria-describedby="contact-description">
+        <p id="contact-description">Please fill out the form below to get in touch with us.</p>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true" aria-label="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" aria-label="Enter your email address">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true" aria-label="Enter your message"></textarea>
+
+        <button type="submit" class="btn" aria-label="Send your message">Send</button>
+      </form>
+    </section>
+  </main>
+</div>
+
+  <footer role="contentinfo" class="footer">
+    <p>&copy; 2024 Accessible Web. All rights reserved.</p>
+  </footer>
+</body>
+</html>
