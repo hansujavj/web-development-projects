@@ -1,0 +1,165 @@
+ /*  for mobile */
+ 
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #801253;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+   
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+nav a:hover {
+    background-color: #575757;
+}
+
+div{
+    display: flex;
+    justify-content: space-evenly;
+height: 80px;
+}
+
+@media (max-width: 400px){
+main {
+    padding: 1em;
+}
+#img1{
+    height: 100px;
+    width: 100px;
+    border: #575757;
+    border-width: 2px;
+    border-radius: 5%;
+    background-image:url("bedroom.jpg") ;
+    background-size: cover;
+
+}
+
+#img2{
+    height: 100px;
+    width: 100px;
+    border: #575757;
+    border-width: 2px;
+    border-radius: 5%;
+    background-image:url("toiletaries.avif") ;
+    background-size: cover;
+
+}
+
+#img3{
+    height: 100px;
+    width: 100px;
+    border: #575757;
+    border-width: 2px;
+    border-radius: 5%;
+    background-image:url("trolley.avif") ;
+    background-size: cover;
+
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ }
+
+/*  for desktops */
+@media (min-width: 600px) {
+
+    header{
+        padding: 0.5em;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        border: none;
+    }
+
+    div{
+        display: flex;
+        justify-content: space-evenly;
+        height: 200px;
+    }
+    
+
+    footer {
+        position: static;
+    }
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    #img1{
+        height: 200px;
+        width: 200px;
+        border: #575757;
+        border-width: 2px;
+        border-radius: 5%;
+        background-image:url("bedroom.jpg") ;
+        background-size: cover;
+    
+    }
+    
+    #img2{
+        height: 200px;
+        width: 200px;
+        border: #575757;
+        border-width: 2px;
+        border-radius: 5%;
+        background-image:url("toiletaries.avif") ;
+        background-size: cover;
+    
+    }
+    
+    #img3{
+        height: 200px;
+        width: 200px;
+        border: #575757;
+        border-width: 2px;
+        border-radius: 5%;
+        background-image:url("trolley.avif") ;
+        background-size: cover;
+    
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+
+}
