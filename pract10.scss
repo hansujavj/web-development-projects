@@ -1,0 +1,85 @@
+// Variables
+$primary-color: #83315ab7;
+$secondary-color: #333;
+$background-color: #f9f9f9;
+$text-color: #555;
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+// General Styles
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: $background-color;
+  color: $secondary-color;
+}
+
+.header {
+  text-align: center;
+  padding: 1.2rem 0;
+  background: $primary-color;
+  color: white;
+}
+
+// Container for Boxes
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Box Styles
+.box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: $box-shadow;
+  text-align: center;
+  padding: 1rem;
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  &__title {
+    margin: 0.5rem 0;
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: $text-color;
+  }
+}
+
+// Footer Styles
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: $primary-color;
+  color: white;
+  margin-top: 2rem;
+}
+
+// Responsive Design
+@media (max-width: 600px) {
+  .box {
+    padding: 0.8rem;
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__description {
+      font-size: 0.9rem;
+    }
+  }
+}
